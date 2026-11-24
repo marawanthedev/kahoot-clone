@@ -1,0 +1,16 @@
+{
+  "name": "workshop-quiz",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Live Kahoot-style quiz for the Mini Shop workshop",
+  "scripts": {
+    "start": "node server.mjs",
+    "bots": "node bots.mjs",
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "qrcode": "1.5.4",
+    "ws": "8.23.0"
+  }
+}

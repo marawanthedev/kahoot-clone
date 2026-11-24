@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: workshop-quiz
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      # Set both in the Render dashboard so they survive a restart
+      - key: HOST_KEY
+        sync: false
+      - key: PIN
+        sync: false
