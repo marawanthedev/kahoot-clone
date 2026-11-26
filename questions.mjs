@@ -17,6 +17,6 @@ export const questions = [
   { q: "Why did we move the fetching and filtering out of App into a custom hook?", options: ["Hooks run faster than components", "To separate the logic from the UI, so the component only decides what to draw", "TypeScript requires hooks", "To avoid writing JSX"], answer: 1 },
   { q: "Which HTTP status code means a product was created successfully?", options: ["200", "204", "404", "201"], answer: 3 },
   { q: "The form already validates the product. Why does the server validate too?", options: ["Requests can come from Postman or scripts that never use our form", "Zod only works on the server", "The form validation is optional in React", "To make the page load faster"], answer: 0 },
-  { q: "When did we reach for a zustand store instead of local state?", options: ["For the category filter, which only one component uses", "For the cart, which many components in different places need", "For every variable in the app", "To replace the database"], answer: 1 },
+  { q: "Why did we use global state (a zustand store) for the cart?", options: ["Because local state is not allowed for arrays", "Because many components in different places need to access it", "Because it replaces the database", "Because every variable in the app should be global"], answer: 1 },
   { q: "Deleting a product id that does not exist should return...", options: ["200", "201", "500", "404"], answer: 3 },
 ];
